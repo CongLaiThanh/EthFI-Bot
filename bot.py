@@ -14,7 +14,7 @@ load_dotenv()
 BOT_TOKEN = os.getenv("BOT_TOKEN")  # bắt buộc
 ADMIN_USERNAME = os.getenv("ADMIN_USERNAME", "")  # tuỳ chọn
 DATA_FILE = "subscribers.json"
-INTERVAL_SECONDS = 1 * 60   # 5 phút
+INTERVAL_SECONDS = 5 * 60   # 5 phút
 SYMBOL = "ETHFI"
 BINANCE_PERP = "ETHFIUSDT"
 
