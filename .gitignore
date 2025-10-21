@@ -1,0 +1,14 @@
+# Bỏ môi trường ảo
+venv/
+.venv/
+
+# Bỏ file chứa token thật
+.env
+
+# Bỏ file Python cache
+__pycache__/
+*.pyc
+
+# Bỏ cấu hình IDE
+.idea/
+.vscode/
