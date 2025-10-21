@@ -230,6 +230,7 @@ def format_report():
         f"🎯 ETA về $1.8: <b>{eta_text}</b>\n"
         f"\n"
         f"ℹ️ Nguồn: CoinGecko, Binance Futures, DeFiLlama"
+        f"🧑‍💻Người lập trình: Code by Hoàng Sĩ Thạc"
     )
     return msg
 
