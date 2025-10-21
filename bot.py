@@ -231,7 +231,7 @@ def format_report():
         f"\n"
         f"ℹ️ Nguồn: CoinGecko, Binance Futures, DeFiLlama"
         f"\n"
-        f"🧑‍💻Người lập trình: Code by Hoàng Sĩ Thạc"
+        f"🧑‍💻Người lập trình: Thanos Huang"
     )
     return msg
 
