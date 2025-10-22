@@ -219,7 +219,7 @@ def format_report():
 
     dt = datetime.now(timezone.utc).astimezone(LOCAL_TZ).strftime("%d/%m %H:%M")
     msg = (
-        f"📊 <b>ETHFI 5m Update</b> — {dt}\n"
+        f"📊 <b>ETHFI 10m Update</b> — {dt}\n"
         f"• Giá: <b>${(price or 0):.4f}</b>  |  24h vol: <b>{pretty_usd(vol24)}</b>\n"
         f"• MCap: {pretty_usd(mcap)}  |  TVL: {pretty_usd(tvl)}\n"
         f"• 1h Δ%: {(chg1h or 0):+.2f}%  | 24h Δ%: {(chg24h or 0):+.2f}%\n"
