@@ -3,6 +3,8 @@ import json
 import asyncio
 import logging
 from datetime import datetime, timezone
+from zoneinfo import ZoneInfo
+LOCAL_TZ = ZoneInfo("Asia/Ho_Chi_Minh")
 import requests
 from dotenv import load_dotenv
 from telegram import Update
@@ -215,9 +217,9 @@ def format_report():
     except Exception:
         pass
 
-    dt = datetime.now(timezone.utc).astimezone().strftime("%d/%m %H:%M")
+    dt = datetime.now(timezone.utc).astimezone(LOCAL_TZ).strftime("%d/%m %H:%M")
     msg = (
-        f"📊 <b>ETHFI Cập nhập & Phân tích</b> — {dt}\n"
+        f"📊 <b>ETHFI Update</b> — {dt}\n"
         f"• Giá: <b>${(price or 0):.4f}</b>  |  24h vol: <b>{pretty_usd(vol24)}</b>\n"
         f"• MCap: {pretty_usd(mcap)}  |  TVL: {pretty_usd(tvl)}\n"
         f"• 1h Δ%: {(chg1h or 0):+.2f}%  | 24h Δ%: {(chg24h or 0):+.2f}%\n"
