@@ -217,7 +217,7 @@ def format_report():
 
     dt = datetime.now(timezone.utc).astimezone().strftime("%d/%m %H:%M")
     msg = (
-        f"📊 <b>ETHFI Cập nhập giá và Phân tích Thị trường </b> — {dt}\n"
+        f"📊 <b>ETHFI Cập nhập giá và Phân tích</b> — {dt}\n"
         f"• Giá: <b>${(price or 0):.4f}</b>  |  24h vol: <b>{pretty_usd(vol24)}</b>\n"
         f"• MCap: {pretty_usd(mcap)}  |  TVL: {pretty_usd(tvl)}\n"
         f"• 1h Δ%: {(chg1h or 0):+.2f}%  | 24h Δ%: {(chg24h or 0):+.2f}%\n"
@@ -231,7 +231,7 @@ def format_report():
         f"\n"
         f"ℹ️ Nguồn: CoinGecko, Binance Futures, DeFiLlama"
         f"\n"
-        f"🧑‍💻Người lập trình: <b>Thanos Huang</b>"
+        f"🧑‍💻Người lập trình: <span style='color:green;'><b>Thanos Huang</b></span>"
     )
     return msg
 
